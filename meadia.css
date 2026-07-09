@@ -1,0 +1,41 @@
+@media only screen and (max-width: 768px) {
+    /* 1. Reset all containers to be full width */
+    .container, .main-container, .choose-us-container, .section-l, .last-sec-content {
+        grid-template-columns: 1fr !important;
+        display: flex !important;
+        flex-direction: column !important;
+        padding: 10px !important;
+        gap: 15px !important;
+    }
+
+    /* 2. Fix the Email Input and Button */
+    .input {
+        width: 90% !important; /* Makes it fit the phone screen */
+        margin-bottom: 10px !important;
+    }
+    
+    .searcher {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .btn {
+        width: 90% !important;
+    }
+
+    /* 3. Fix the Footer Overflow */
+    .last-sec {
+        padding: 2rem 1rem !important;
+    }
+    
+    .last-sec-content {
+        align-items: center;
+        text-align: center;
+    }
+    
+    /* 4. Hide desktop-only nav links */
+    .nav-links {
+        display: none !important;
+    }
+}
